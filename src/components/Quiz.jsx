@@ -21,10 +21,10 @@ export default function Quiz() {
         } else {
           setAnswerState("wrong");
         }
+        setTimeout(() => {
+          setAnswerState("");
+        }, 2000);
       }, 1000);
-      setTimeout(() => {
-        setAnswerState("");
-      }, 2000);
     },
     [activeQuestionIndex]
   );
